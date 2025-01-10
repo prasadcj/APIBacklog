@@ -1,16 +1,12 @@
-# API Proposal Template
-This template captures all the information that a partner should fill out when proposing a new API (or API family) to CAMARA.
-
-
 | **Field** | Description | 
 | ---- | ----- |
-| API family name | Name of the API or API family |
-| API family owner | Company submitting the API proposal. |
-| API summary | High level description / scope of the API or API family, and two/three examples of in-scope business cases. |
-| Technical viability | Identify the underlying network/cloud capabilities which are needed for the support of this API or API family, relating these capabilities them to standards maturity. <br><em>Example: this API requires the availability of NEF with this Rel-15 "X"feature</em>. 
-| Commercial viability | Specify the availability of commercial or (industrialized) open-source solutions for the identified network/cloud capabilities. <br><em> NOTE: If open-source, provide a publicly available reference/link to the actual solution, and specify the version under consideration.</em>|
-| YAML code available? | YES / NO. |
-| Validated in lab/productive environments? | YES / NO. <br>If YES, specify if it was lab network or productive network. |
-| Validated with real customers? | YES / NO. <br>If YES, specify how many customers participated in the evaluation, and what their use cases were. <br><em>NOTE: It is not mandatory (though recommendable) to specify the name of the customers. </em> |
-| Validated with operators? | YES / NO. <br> If YES, specify how many operators participated in the evaluation. <br><em>NOTE: It is not mandatory (though recommendable) to specify the name of the operators. </em> |
-| Supporters in API Backlog Working Group | List of supporters. <br><em> NOTE: That shall be added by the Working Group. Supporting an API proposal means that the supporting company must provide at least 1 (one) Maintainer at the time of the Sub Project creation.</em> |
+| API family name | IdentityAndConsentManagement |
+| API family owner | Cellcard  |
+| API summary | The use case behind this is that the Cambodian government wants to query SIM profiles from each mobile operator securely. To achieve this, they have requested all operators to provide APIs for secure data access. The current API query used to retrieve a subscriber's SIM profile exposes specific personal and technical information associated with a mobile subscriber's account. This includes sensitive data such as the subscriber's name, date of birth, ID card details, and SIM status. While this information is essential for identity verification, service eligibility checks, and account management, the exposure of such sensitive data raises significant concerns about data privacy and security, necessitating stringent controls and safeguards to mitigate potential risks. We are a Cambodian mobile service provider called Cellcard. We have developed this API and plan to publish it under the CMARA project. This initiative aims to establish a common API standard that all mobile communication providers can adopt for similar use cases, promoting consistency, interoperability, and operational efficiency across the industry. Additionally, we had a meeting with GSMA, where they suggested we make a proposal to the CAMARA EKYC project, as this API aligns more closely with EKYC-related initiatives *Additional context* Please find the full API Documentation URL: https://drive.google.com/file/d/1zDhR9Ca13O_zyuHGnXNY3bmdwnU2R1L4/view?usp=sharing. |
+| Technical viability | NA | 
+| Commercial viability | Open-source solutions NOTE: This solution is not yet published. However, once it is onboarded to the Camara project, we will be able to make it available |
+| YAML code available? | YES |
+| Validated in lab/productive environments? | YES, This is currently running in the Cellcard production environment. |
+| Validated with real customers? | YES, We have already shared this with the Cambodian TRC. |
+| Validated with operators? | YES, Cellcard is currently using this solution exclusively. However, we aim to share it with all other MNOs |
+| Supporters in API Backlog Working Group | Cellcard Development Tema |
